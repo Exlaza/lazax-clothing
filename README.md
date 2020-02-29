@@ -1,4 +1,4 @@
-<h1 align=center>CRWN Clothing</h1>
+<h1 align=center>Lazax Clothing</h1>
 
 <p align=center>
 An on going ecommerce project from the <a href='https://www.udemy.com/complete-react-developer-zero-to-mastery/'>Complete React Developer in 2020</a> course
