@@ -35,8 +35,6 @@ See it live: [https://lazax-live.herokuapp.com/](https://lazax-live.herokuapp.co
 - [NodeJS](https://nodejs.org/en/) - Server side JavaScript
 - [express](https://expressjs.com/) - Web framework for Node.js
 
-☁  Hosted on Heroku
-- [Steps to host the app](https://github.com/jwlbjtu/crwn-clothing/blob/master/Heroku.md)
 
 ## Quick Start
 
