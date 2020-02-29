@@ -43,7 +43,7 @@ See it live: [https://lazax-live.herokuapp.com/](https://jwl-clothing.herokuapp.
 Clone the repo using Git:
 
 ```bash
-git clone https://github.com/jwlbjtu/crwn-clothing.git
+git clone https://github.com/exlaza/lazax-clothing.git
 ```
 
 Install the dependencies and start the app:
