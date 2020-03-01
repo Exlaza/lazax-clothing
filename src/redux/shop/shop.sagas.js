@@ -1,23 +1,25 @@
-import { takeEvery, call, put } from "redux-saga/effects";
+import { takeLatest, call, put, all } from 'redux-saga/effects';
 
-import ShopActionTypes from "./shop.types";
 import {
   firestore,
-  convertCollectionSnapshotToMap
-} from "../../firebase/firebase.utils";
+  convertCollectionsSnapshotToMap
+} from '../../firebase/firebase.utils';
+
 import {
   fetchCollectionsSuccess,
   fetchCollectionsFailure
-} from "./shop.actions";
+} from './shop.actions';
+
+import ShopActionTypes from './shop.types';
 
 export function* fetchCollectionsAsync() {
   try {
-    const collectionRef = firestore.collection("collections");
+    const collectionRef = firestore.collection('collections');
     const snapshot = yield collectionRef.get();
-    // Think of yield this way. When we do yield we give control back to redux-saga middleware.
-    // Now middleware is free to do next whwatever it wants to, this tells us that most of the operations are non blockinbg
-    // Also concurrency you can clreatly see how is it working in here
-    const collectionsMap = yield call(convertCollectionSnapshotToMap, snapshot);
+    const collectionsMap = yield call(
+      convertCollectionsSnapshotToMap,
+      snapshot
+    );
     yield put(fetchCollectionsSuccess(collectionsMap));
   } catch (error) {
     yield put(fetchCollectionsFailure(error.message));
@@ -25,8 +27,12 @@ export function* fetchCollectionsAsync() {
 }
 
 export function* fetchCollectionsStart() {
-  yield takeEvery(
+  yield takeLatest(
     ShopActionTypes.FETCH_COLLECTIONS_START,
     fetchCollectionsAsync
   );
+}
+
+export function* shopSagas() {
+  yield all([call(fetchCollectionsStart)]);
 }
