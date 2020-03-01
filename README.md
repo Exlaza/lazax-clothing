@@ -16,7 +16,7 @@ See it live: [https://lazax-live.herokuapp.com/](https://lazax-live.herokuapp.co
 - [React](https://reactjs.org/) - a popular user interface JavaScript library
 - [Redux](https://redux.js.org/) - centralize and manage the state of JavaScript apps
 - [React Router](https://reacttraining.com/react-router/) - helps to navigate through React components
-- [reselect](https://github.com/reduxjs/reselect#motivation-for-memoized-selectors) - a "selector" library for Redux, to avoid recalculations of states by using memoized selectors
+- [reselect](https://github.com/reduxjs/reselect#motivation-for-memoized-selectors) - a "selector" library for Redux, to avoid recalculations of states by using memoized selectors. [Need for reselect Explained](https://daveceddia.com/redux-selectors/)
 - [redux persist](https://github.com/rt2zz/redux-persist) - manage to persist redux store in storage
 - [react-stripe-checkout](https://www.npmjs.com/package/react-stripe-checkout) - a React component the wraps Stripe checkout JavaScript for a better React integration
 - [styled-components](https://www.styled-components.com/) - CSS in JS concept, allow developers style their components by using JavaScript
