@@ -8,7 +8,7 @@ An on going ecommerce project from the <a href='https://www.udemy.com/complete-r
 
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)  
 
-See it live: [https://lazax-live.herokuapp.com/](https://lazax-live.herokuapp.com/)
+See it live <a href = 'https://crwn-clothing-shop183.herokuapp.com/'>here</a>
 
 🏗  Build using:
 
